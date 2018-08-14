@@ -58,9 +58,9 @@ def handle(msg):
             #aa=subprocess.check_output(("python bomber.py"),shell=True)
             url="https://www.zomato.com/php/o2_handler.php"
             no=(command[8:18])
-            rep=int(command[19:21])
-            if(rep>=10 or str(rep)=="  "):
-               rep=10
+            rep=int(command[19:21].strip())
+            if(rep>=8 or str(rep)==""):
+               rep=5
             header = {'Host': 'www.zomato.com',"Origin": "http://hydra98.000webhostapp.com",
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
