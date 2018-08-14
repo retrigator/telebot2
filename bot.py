@@ -2,6 +2,7 @@
 import time
 import subprocess
 import os
+os.system("pip install -r requirements.txt")
 import telepot
 import os
 from selenium import webdriver
@@ -102,7 +103,6 @@ def handle(msg):
             #bot.sendMessage(chat_id,aa)
 #api credentials
 #api = open('api.txt','r')
-os.system("pip install -r requirements.txt")
 api_cont = "680090493:AAH2hskn3pxQB39uViU5SVhgdUfJPZowxrU".strip()
 bot = telepot.Bot(api_cont)
 bot.message_loop(handle)
