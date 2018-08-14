@@ -84,7 +84,7 @@ def handle(msg):
             #options.binary_location = '/app/chrome'
             # get chromedriver from 
             # https://sites.google.com/a/chromium.org/chromedriver/downloads
-            browser = webdriver.Chrome(chrome_options=options, executable_path='/app/driver')
+            #browser = webdriver.Chrome(chrome_options=options, executable_path='/app/driver')
             al=("Launching... it may take upto 20 seconds")
             bot.sendMessage(chat_id,al)
             driver.get('https://www.eviebot.com/en/')
