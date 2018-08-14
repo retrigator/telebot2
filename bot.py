@@ -36,7 +36,7 @@ def handle(msg):
                 #while(1):
                 box=driver.find_element_by_class_name('stimulus')
                 box.send_keys(op)
-                if(op=="/exit"):
+                if(op=="exit"):
                     al=("Exitting chatbot")
                     bot.sendMessage(chat_id,al)
                     chat="OFF"
