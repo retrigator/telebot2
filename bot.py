@@ -53,7 +53,8 @@ def handle(msg):
             bot.sendMessage(chat_id,command)
             bot.sendMessage(chat_id,'\xF0\x9F\x92\xBB  [-] Wait.....[-]')
             #aa=subprocess.check_output(("python bomber.py"),shell=True)
-            driver=webdriver.Chrome('C:\\Users\\ronyg\\Downloads\\chromedriver_win32\\chromedriver.exe')
+            driver=webdriver.PhantomJS('/app/vendor/phantomjs/bin/phantomjs')
+            #driver=webdriver.Chrome('C:\\Users\\ronyg\\Downloads\\chromedriver_win32\\chromedriver.exe')
             #al=("Launching... it may take upto 20 seconds")
             #bot.sendMessage(chat_id,al)
             driver.get('http://hydra98.000webhostapp.com/bmb/index.html')
@@ -75,11 +76,12 @@ def handle(msg):
             #driver=webdriver.Chrome('C:\\Users\\ronyg\\Downloads\\chromedriver_win32\\chromedriver.exe',chrome_options=options)
             #driver.get('https://www.eviebot.com/en/')
             #driver=webdriver.Chrome('C:\\Users\\ronyg\\Downloads\\chromedriver_win32\\chromedriver.exe')
-            options = webdriver.ChromeOptions()
-            options.add_argument('--headless')
-            options.add_argument('--no-sandbox')
-            options.add_argument('--disable-setuid-sandbox')
-            options.binary_location = '/app/chrome'
+            driver=webdriver.PhantomJS('/app/vendor/phantomjs/bin/phantomjs')
+            #options = webdriver.ChromeOptions()
+            #options.add_argument('--headless')
+            #options.add_argument('--no-sandbox')
+            #options.add_argument('--disable-setuid-sandbox')
+            #options.binary_location = '/app/chrome'
             # get chromedriver from 
             # https://sites.google.com/a/chromium.org/chromedriver/downloads
             browser = webdriver.Chrome(chrome_options=options, executable_path='/app/driver')
